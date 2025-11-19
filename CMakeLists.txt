@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.16)
 project(SchoolBot)
 set(CMAKE_CXX_STANDARD 17)
 
-# --- 1. DETECT PLATFORM ---
 if(EMSCRIPTEN)
     set(BUILD_WEB ON)
     add_definitions(-D_WEB_BUILD)
@@ -10,7 +9,6 @@ else()
     set(BUILD_DESKTOP ON)
 endif()
 
-# --- 2. DEPENDENCIES ---
 set(IMGUI_DIR "imgui")
 file(GLOB IMGUI_SOURCES 
     "${IMGUI_DIR}/imgui.cpp" "${IMGUI_DIR}/imgui_draw.cpp" 
@@ -25,20 +23,16 @@ if(BUILD_DESKTOP)
     find_package(Boost REQUIRED COMPONENTS json)
     find_package(Threads REQUIRED)
 else()
-    # For web builds, only find Boost headers (no components)
     find_package(Boost REQUIRED)
 endif()
 
-# --- 3. MAIN TARGET ---
 add_executable(SchoolBot main.cpp ${IMGUI_SOURCES})
 target_include_directories(SchoolBot PRIVATE ${IMGUI_DIR} ${IMGUI_DIR}/backends)
 
 if(BUILD_WEB)
-    # Web: Use Emscripten Fetch & WebGL
-    # CRITICAL: Force Boost.JSON to be header-only
     target_compile_definitions(SchoolBot PRIVATE 
         BOOST_JSON_HEADER_ONLY
-        BOOST_JSON_NO_LIB  # Disable auto-linking
+        BOOST_JSON_NO_LIB  
     )
     
     target_compile_options(SchoolBot PRIVATE 
@@ -46,7 +40,6 @@ if(BUILD_WEB)
         -sUSE_BOOST_HEADERS=1
     )
     
-    # Include Boost headers
     target_include_directories(SchoolBot PRIVATE ${Boost_INCLUDE_DIRS})
     
     target_link_options(SchoolBot PRIVATE 
@@ -59,7 +52,6 @@ if(BUILD_WEB)
     
     set_target_properties(SchoolBot PROPERTIES SUFFIX ".html")
 else()
-    # Desktop: Link Boost, OpenSSL, SDL2
     target_include_directories(SchoolBot PRIVATE 
         ${SDL2_INCLUDE_DIRS} 
         ${Boost_INCLUDE_DIRS} 
@@ -72,10 +64,9 @@ else()
         OpenSSL::SSL 
         OpenSSL::Crypto 
         Threads::Threads
-        Boost::json  # Only link the library on desktop
+        Boost::json  
     )
     
-    # Windows Sockets
     if(WIN32)
         target_link_libraries(SchoolBot PRIVATE ws2_32 crypt32)
     endif()

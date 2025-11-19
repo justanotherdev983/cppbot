@@ -1,4 +1,3 @@
-// --- INCLUDES ---
 #include "imgui.h"
 #include "imgui_impl_opengl3.h"
 #include "imgui_impl_sdl2.h"
@@ -9,19 +8,17 @@
 #include <thread>
 #include <vector>
 
-// Boost JSON (Used on BOTH Web and Desktop)
 #include <boost/json.hpp>
 #include <boost/json/src.hpp>
 namespace json = boost::json;
 
-// Platform Specifics
 #ifdef _WEB_BUILD
 #include <SDL_opengles2.h>
 #include <emscripten.h>
 #include <emscripten/fetch.h>
 #else
 #include <SDL2/SDL_opengl.h>
-// Desktop Networking: Boost.Beast + OpenSSL
+
 #include <boost/asio/connect.hpp>
 #include <boost/asio/ip/tcp.hpp>
 #include <boost/asio/ssl/stream.hpp>
@@ -37,39 +34,32 @@ namespace ssl = net::ssl;
 using tcp = net::ip::tcp;
 #endif
 
-// --- DATA MODELS ---
 struct ChatMessage {
     std::string role;
     std::string content;
 };
 
-// --- GLOBAL STATE ---
 std::vector<ChatMessage> history;
-std::mutex historyMutex; // Thread safety for Desktop
+std::mutex historyMutex;
 char inputBuffer[2048] = "";
 char apiKeyBuffer[128] = "";
 bool isWaiting = false;
 bool scrollToBottom = false;
 
-// --- HELPER: ADD MESSAGE ---
 void AddMessage(std::string role, std::string content) {
     std::lock_guard<std::mutex> lock(historyMutex);
     history.push_back({role, content});
     scrollToBottom = true;
 }
 
-// --- NETWORK: DESKTOP IMPLEMENTATION (BOOST ASIO/BEAST) ---
-// --- NETWORK: DESKTOP IMPLEMENTATION (BOOST ASIO/BEAST) ---
 #ifndef _WEB_BUILD
 void DesktopAPICall(std::string message, std::string apiKey) {
     try {
-        // 1. Prepare Boost.JSON payload
         json::array messages;
         {
             std::lock_guard<std::mutex> lock(historyMutex);
             messages.push_back({{"role", "system"},
                                 {"content", "You are a helpful assistant."}});
-            // Add simplified context (last 4 messages)
             int start = (history.size() > 4) ? history.size() - 4 : 0;
             for (size_t i = start; i < history.size(); i++) {
                 messages.push_back({{"role", history[i].role},
@@ -82,37 +72,28 @@ void DesktopAPICall(std::string message, std::string apiKey) {
         payload["messages"] = messages;
         std::string requestBody = json::serialize(payload);
 
-        // 2. Networking (Synchronous for simplicity, running in std::thread)
         const std::string host = "openrouter.ai";
         const std::string port = "443";
 
         net::io_context ioc;
         ssl::context ctx(ssl::context::tlsv12_client);
 
-        // --- CHANGE #1: IMPROVE VERIFICATION ---
-        // Instead of verify_none, load the default system certificate
-        // authorities. This is more secure and reliable.
         ctx.set_default_verify_paths();
         ctx.set_verify_mode(ssl::verify_peer);
 
         tcp::resolver resolver(ioc);
         beast::ssl_stream<beast::tcp_stream> stream(ioc, ctx);
 
-        // --- CHANGE #2: SET THE SNI HOSTNAME ---
-        // This is the crucial fix for the handshake error.
-        // It tells the server which certificate we want.
         if (!SSL_set_tlsext_host_name(stream.native_handle(), host.c_str())) {
             beast::error_code ec{static_cast<int>(::ERR_get_error()),
                                  net::error::get_ssl_category()};
             throw beast::system_error{ec};
         }
 
-        // Connect to openrouter.ai
         auto const results = resolver.resolve(host, port);
         beast::get_lowest_layer(stream).connect(results);
         stream.handshake(ssl::stream_base::client);
 
-        // 3. Send HTTP Request
         http::request<http::string_body> req{http::verb::post,
                                              "/api/v1/chat/completions", 11};
         req.set(http::field::host, host);
@@ -124,19 +105,16 @@ void DesktopAPICall(std::string message, std::string apiKey) {
 
         http::write(stream, req);
 
-        // 4. Read Response
         beast::flat_buffer buffer;
         http::response<http::string_body> res;
         http::read(stream, buffer, res);
 
-        // 5. Parse Response with Boost.JSON
         json::value jv = json::parse(res.body());
         std::string reply = json::value_to<std::string>(
             jv.at("choices").at(0).at("message").at("content"));
 
         AddMessage("assistant", reply);
 
-        // Graceful shutdown
         beast::error_code ec;
         stream.shutdown(ec);
     } catch (std::exception const &e) {
@@ -145,7 +123,6 @@ void DesktopAPICall(std::string message, std::string apiKey) {
     isWaiting = false;
 }
 #endif
-// --- NETWORK: WEB IMPLEMENTATION (EMSCRIPTEN FETCH) ---
 #ifdef _WEB_BUILD
 void onFetchSuccess(emscripten_fetch_t *fetch) {
     std::string response(fetch->data, fetch->numBytes);
@@ -204,7 +181,6 @@ void WebAPICall(std::string message, std::string apiKey) {
 }
 #endif
 
-// --- TRIGGER ---
 void SendMessage() {
     std::string msg = inputBuffer;
     std::string key = apiKeyBuffer;
@@ -222,12 +198,10 @@ void SendMessage() {
 #ifdef _WEB_BUILD
     WebAPICall(msg, key);
 #else
-    // Launch in a separate thread so UI doesn't freeze
     std::thread([=]() { DesktopAPICall(msg, key); }).detach();
 #endif
 }
 
-// --- STYLE ---
 void ApplyCoolStyle() {
     ImGuiStyle &style = ImGui::GetStyle();
     style.WindowRounding = 12.0f;
@@ -238,24 +212,20 @@ void ApplyCoolStyle() {
     // Minimalist Font scale could be added here if font file loaded
 }
 
-// --- RENDER UI ---
 void Render() {
     ImGui::SetNextWindowPos(ImVec2(0, 0));
     ImGui::SetNextWindowSize(ImGui::GetIO().DisplaySize);
     ImGui::Begin("Root", nullptr,
                  ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize);
 
-    // Header
     ImGui::TextDisabled("OpenRouter C++ Client (Boost + ImGui)");
     ImGui::Separator();
 
-    // Config
     ImGui::SetNextItemWidth(300);
     ImGui::InputTextWithHint("##key", "API Key (Required)", apiKeyBuffer,
                              sizeof(apiKeyBuffer),
                              ImGuiInputTextFlags_Password);
 
-    // Chat History
     ImGui::Spacing();
     ImGui::BeginChild("History", ImVec2(0, -50), true);
     {
@@ -290,7 +260,6 @@ void Render() {
     }
     ImGui::EndChild();
 
-    // Input
     ImGui::Separator();
     bool submit = false;
     ImGui::PushItemWidth(-80);
@@ -315,8 +284,6 @@ void Render() {
     ImGui::End();
 }
 
-// --- MAIN ENTRY POINT ---
-// --- MAIN ENTRY POINT ---
 int main(int, char **) {
     if (SDL_Init(SDL_INIT_VIDEO) != 0)
         return -1;
@@ -340,13 +307,9 @@ int main(int, char **) {
     ImGui_ImplSDL2_InitForOpenGL(window, SDL_GL_GetCurrentContext());
     ImGui_ImplOpenGL3_Init("#version 100");
 
-    // This bool will now be shared by both platforms
     bool done = false;
 
-    // This lambda contains the logic for a SINGLE frame.
-    // It now includes event processing AND rendering.
     auto main_loop_iteration = [&]() {
-        // --- 1. PROCESS EVENTS ---
         SDL_Event event;
         while (SDL_PollEvent(&event)) {
             ImGui_ImplSDL2_ProcessEvent(&event);
@@ -359,12 +322,11 @@ int main(int, char **) {
             }
         }
 
-        // --- 2. RENDER FRAME ---
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplSDL2_NewFrame();
         ImGui::NewFrame();
 
-        Render(); // Your UI rendering function
+        Render();
 
         ImGui::Render();
         glViewport(0, 0, (int)ImGui::GetIO().DisplaySize.x,
@@ -376,7 +338,6 @@ int main(int, char **) {
     };
 
 #ifdef _WEB_BUILD
-    // For web, give Emscripten the function to call repeatedly.
     emscripten_set_main_loop_arg(
         [](void *arg) {
             auto loop_func = static_cast<decltype(main_loop_iteration) *>(arg);
@@ -384,15 +345,12 @@ int main(int, char **) {
         },
         &main_loop_iteration, 0, 1);
 #else
-    // For desktop, we call that same function inside our own loop.
     while (!done) {
         main_loop_iteration();
-        // Optional: a small sleep to prevent 100% CPU usage on desktop
         std::this_thread::sleep_for(std::chrono::milliseconds(10));
     }
 #endif
 
-    // Cleanup (will be reached on desktop when loop ends)
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplSDL2_Shutdown();
     ImGui::DestroyContext();
