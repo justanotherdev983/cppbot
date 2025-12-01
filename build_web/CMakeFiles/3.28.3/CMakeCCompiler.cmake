@@ -1,7 +1,7 @@
-set(CMAKE_C_COMPILER "/usr/bin/emcc")
+set(CMAKE_C_COMPILER "/home/bou/Download/emsdk/upstream/emscripten/emcc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "Clang")
-set(CMAKE_C_COMPILER_VERSION "15.0.7")
+set(CMAKE_C_COMPILER_VERSION "22.0.0")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "11")
@@ -21,10 +21,10 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "emar")
-set(CMAKE_C_COMPILER_AR "emar")
-set(CMAKE_RANLIB "emranlib")
-set(CMAKE_C_COMPILER_RANLIB "emranlib")
+set(CMAKE_AR "/home/bou/Download/emsdk/upstream/emscripten/emar")
+set(CMAKE_C_COMPILER_AR "/home/bou/Download/emsdk/upstream/emscripten/emar")
+set(CMAKE_RANLIB "/home/bou/Download/emsdk/upstream/emscripten/emranlib")
+set(CMAKE_C_COMPILER_RANLIB "/home/bou/Download/emsdk/upstream/emscripten/emranlib")
 set(CMAKE_LINKER "/usr/bin/ld")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
@@ -44,7 +44,7 @@ set(CMAKE_C_LINKER_DEPFILE_SUPPORTED )
 # Save compiler ABI information.
 set(CMAKE_C_SIZEOF_DATA_PTR "4")
 set(CMAKE_C_COMPILER_ABI "")
-set(CMAKE_C_BYTE_ORDER "")
+set(CMAKE_C_BYTE_ORDER "LITTLE_ENDIAN")
 set(CMAKE_C_LIBRARY_ARCHITECTURE "")
 
 if(CMAKE_C_SIZEOF_DATA_PTR)
@@ -68,7 +68,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/home/bou/Download/emsdk/upstream/emscripten/cache/sysroot/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

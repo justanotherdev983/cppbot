@@ -1,0 +1,1 @@
+/home/bou/Download/emsdk/upstream/emscripten/em++ -sUSE_SDL=2 -sFETCH=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_BOOST_HEADERS=1 --shell-file=/home/bou/code/git/cppbot/imgui/examples/libs/emscripten/shell_minimal.html @CMakeFiles/SchoolBot.dir/objects1.rsp -o SchoolBot.html 

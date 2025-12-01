@@ -1,5 +1,3 @@
-#include "emscripten-browser-clipboard/emscripten_browser_clipboard.h"
-
 #include "imgui.h"
 #include "imgui_impl_opengl3.h"
 #include "imgui_impl_sdl2.h"
@@ -63,30 +61,6 @@ struct Highlight {
         return start < other.start;
     }
 };
-
-#ifdef _WEB_BUILD
-// Global clipboard storage
-static std::string g_clipboard_text;
-
-// Clipboard callbacks for ImGui
-const char* GetClipboardText(void* user_data) {
-    // Request paste from browser (async operation)
-    // The callback signature must match: std::string&&, void*
-    emscripten_browser_clipboard::paste([](std::string&& paste_data, void *callback_data) {
-        g_clipboard_text = std::move(paste_data);
-    }, nullptr);
-    
-    // Return the last pasted text (note: this is async, so may not be immediate)
-    return g_clipboard_text.c_str();
-}
-
-void SetClipboardText(void* user_data, const char* text) {
-    // Copy text to browser clipboard
-    emscripten_browser_clipboard::copy(text);
-    // Also update our local clipboard cache
-    g_clipboard_text = text;
-}
-#endif
 
 std::vector<ChatMessage> history;
 std::mutex historyMutex;
@@ -254,7 +228,7 @@ std::vector<HighlightRule> GetRulesForLanguage(const std::string& lang) {
     return rules;
 }
 
-void RenderHighlightedCode(const std::string& code, const std::string& lang) {
+void render_highlighted_code(const std::string& code, const std::string& lang) {
     auto rules = GetRulesForLanguage(lang);
     
     std::vector<std::string> lines;
@@ -332,14 +306,14 @@ void RenderHighlightedCode(const std::string& code, const std::string& lang) {
     }
 }
 
-void AddMessage(std::string role, std::string content) {
+void add_message(std::string role, std::string content) {
     std::lock_guard<std::mutex> lock(historyMutex);
     history.push_back({role, content});
     scrollToBottom = true;
 }
 
 #ifndef _WEB_BUILD
-void DesktopAPICall(std::string message, std::string apiKey) {
+void desktop_api_call(std::string message, std::string apiKey) {
     try {
         json::array messages;
         {
@@ -399,12 +373,12 @@ void DesktopAPICall(std::string message, std::string apiKey) {
         std::string reply = json::value_to<std::string>(
             jv.at("choices").at(0).at("message").at("content"));
 
-        AddMessage("assistant", reply);
+        add_message("assistant", reply);
 
         beast::error_code ec;
         stream.shutdown(ec);
     } catch (std::exception const &e) {
-        AddMessage("system", std::string("Error: ") + e.what());
+        add_message("system", std::string("Error: ") + e.what());
     }
     isWaiting = false;
 }
@@ -419,20 +393,20 @@ void onFetchSuccess(emscripten_fetch_t *fetch) {
         json::value jv = json::parse(response);
         std::string reply = json::value_to<std::string>(
             jv.at("choices").at(0).at("message").at("content"));
-        AddMessage("assistant", reply);
+        add_message("assistant", reply);
     } catch (...) {
-        AddMessage("system", "Error parsing JSON response");
+        add_message("system", "Error parsing JSON response");
     }
     isWaiting = false;
 }
 
 void onFetchError(emscripten_fetch_t *fetch) {
     emscripten_fetch_close(fetch);
-    AddMessage("system", "Network Error (Check console)");
+    add_message("system", "Network Error (Check console)");
     isWaiting = false;
 }
 
-void WebAPICall(std::string message, std::string apiKey) {
+void web_api_call(std::string message, std::string apiKey) {
     json::array messages;
     messages.push_back({{"role", "user"}, {"content", message}});
 
@@ -474,18 +448,18 @@ void SendMessage() {
     if (msg.empty())
         return;
     if (key.empty()) {
-        AddMessage("system", "Please enter API Key first.");
+        add_message("system", "Please enter API Key first.");
         return;
     }
 
-    AddMessage("user", msg);
+    add_message("user", msg);
     memset(inputBuffer, 0, sizeof(inputBuffer));
     isWaiting = true;
 
 #ifdef _WEB_BUILD
-    WebAPICall(msg, key);
+    web_api_call(msg, key);
 #else
-    std::thread([=]() { DesktopAPICall(msg, key); }).detach();
+    std::thread([=]() { desktop_api_call(msg, key); }).detach();
 #endif
 }
 
@@ -558,7 +532,7 @@ void RenderMessage(const ChatMessage& m) {
                 
                 ImGui::Separator();
                 
-                RenderHighlightedCode(codeBlocks[blockIdx].code, codeBlocks[blockIdx].language);
+                render_highlighted_code(codeBlocks[blockIdx].code, codeBlocks[blockIdx].language);
                 
                 ImGui::EndChild();
                 ImGui::PopStyleColor();
@@ -655,15 +629,6 @@ int main(int, char **) {
 
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
-
-#ifdef _WEB_BUILD
-    // Setup clipboard callbacks for web build
-    ImGuiIO& io = ImGui::GetIO();
-    io.SetClipboardTextFn = SetClipboardText;
-    io.GetClipboardTextFn = GetClipboardText;
-    io.ClipboardUserData = nullptr;
-#endif
-
     ApplyCoolStyle();
     ImGui_ImplSDL2_InitForOpenGL(window, SDL_GL_GetCurrentContext());
     ImGui_ImplOpenGL3_Init("#version 100");
