@@ -9736,8 +9736,6 @@ var wasmImports = {
   /** @export */
   clock_time_get: _clock_time_get,
   /** @export */
-  copy_async_js,
-  /** @export */
   eglBindAPI: _eglBindAPI,
   /** @export */
   eglChooseConfig: _eglChooseConfig,
@@ -10308,9 +10306,7 @@ var wasmImports = {
   /** @export */
   glVertexAttribPointer: _glVertexAttribPointer,
   /** @export */
-  glViewport: _glViewport,
-  /** @export */
-  paste_js
+  glViewport: _glViewport
 };
 
 

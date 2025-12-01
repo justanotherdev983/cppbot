@@ -1,5 +1,5 @@
 # Requirements:
-1. Api key from openrouter.ai
+1. Api key from openrouter.ai // https://openrouter.ai/settings/keys
 2. emscripten installed:
 ```code 
 sudo apt install git python3 cmake build-essential\
@@ -9,6 +9,7 @@ cd emsdk
 ./emsdk install latest
 ./emsdk activate latest
 source ./emsdk_env.sh
+emrun SchoolBot.html
 ```
 # Build 
 ## Build desktop
