@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SchoolBot.dir/link.d"
   "CMakeFiles/SchoolBot.dir/imgui/backends/imgui_impl_opengl3.cpp.o"
   "CMakeFiles/SchoolBot.dir/imgui/backends/imgui_impl_opengl3.cpp.o.d"
   "CMakeFiles/SchoolBot.dir/imgui/backends/imgui_impl_sdl2.cpp.o"

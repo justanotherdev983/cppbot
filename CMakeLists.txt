@@ -22,8 +22,6 @@ if(BUILD_DESKTOP)
     find_package(OpenSSL REQUIRED)
     find_package(Boost REQUIRED COMPONENTS json)
     find_package(Threads REQUIRED)
-else()
-    find_package(Boost REQUIRED)
 endif()
 
 add_executable(SchoolBot main.cpp ${IMGUI_SOURCES})
@@ -39,8 +37,6 @@ if(BUILD_WEB)
         -sUSE_SDL=2 
         -sUSE_BOOST_HEADERS=1
     )
-    
-    target_include_directories(SchoolBot PRIVATE ${Boost_INCLUDE_DIRS})
     
     target_link_options(SchoolBot PRIVATE 
         -sUSE_SDL=2 
