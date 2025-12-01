@@ -4,9 +4,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
       The target system is: Emscripten - 1 - x86
-      The host system is: Linux - 6.12.48+deb13-amd64 - x86_64
+      The host system is: Linux - 5.15.167.4-microsoft-standard-WSL2 - x86_64
 ...

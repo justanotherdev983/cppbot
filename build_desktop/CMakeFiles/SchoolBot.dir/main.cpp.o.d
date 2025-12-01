@@ -1,9 +1,9 @@
-CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
- /usr/include/stdc-predef.h /home/bou/code/probe/cppbot/imgui/imgui.h \
- /home/bou/code/probe/cppbot/imgui/imconfig.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/float.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h /usr/include/string.h \
+CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/git/cppbot/main.cpp \
+ /usr/include/stdc-predef.h /home/bou/code/git/cppbot/imgui/imgui.h \
+ /home/bou/code/git/cppbot/imgui/imconfig.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -15,8 +15,8 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/bou/code/probe/cppbot/imgui/backends/imgui_impl_opengl3.h \
- /home/bou/code/probe/cppbot/imgui/backends/imgui_impl_sdl2.h \
+ /home/bou/code/git/cppbot/imgui/backends/imgui_impl_opengl3.h \
+ /home/bou/code/git/cppbot/imgui/backends/imgui_impl_sdl2.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
@@ -56,168 +56,160 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/c++/14/stdlib.h /usr/include/c++/14/cstdlib \
- /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h \
- /usr/include/c++/14/pstl/pstl_config.h /usr/include/stdlib.h \
+ /usr/include/c++/13/stdlib.h /usr/include/c++/13/cstdlib \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+ /usr/include/c++/13/pstl/pstl_config.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/14/bits/std_abs.h /usr/include/wchar.h \
+ /usr/include/c++/13/bits/std_abs.h /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/inttypes.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h /usr/include/ctype.h \
- /usr/include/c++/14/math.h /usr/include/c++/14/cmath \
- /usr/include/c++/14/bits/requires_hosted.h \
- /usr/include/c++/14/bits/cpp_type_traits.h \
- /usr/include/c++/14/bits/version.h /usr/include/c++/14/ext/type_traits.h \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/c++/13/math.h /usr/include/c++/13/cmath \
+ /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/c++/13/bits/cpp_type_traits.h \
+ /usr/include/c++/13/ext/type_traits.h /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/14/bits/specfun.h \
- /usr/include/c++/14/bits/stl_algobase.h \
- /usr/include/c++/14/bits/functexcept.h \
- /usr/include/c++/14/bits/exception_defines.h \
- /usr/include/c++/14/ext/numeric_traits.h \
- /usr/include/c++/14/bits/stl_pair.h /usr/include/c++/14/type_traits \
- /usr/include/c++/14/bits/move.h /usr/include/c++/14/bits/utility.h \
- /usr/include/c++/14/bits/stl_iterator_base_types.h \
- /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/14/bits/concept_check.h \
- /usr/include/c++/14/debug/assertions.h \
- /usr/include/c++/14/bits/stl_iterator.h \
- /usr/include/c++/14/bits/ptr_traits.h /usr/include/c++/14/debug/debug.h \
- /usr/include/c++/14/bits/predefined_ops.h /usr/include/c++/14/bit \
- /usr/include/c++/14/concepts /usr/include/c++/14/limits \
- /usr/include/c++/14/tr1/gamma.tcc \
- /usr/include/c++/14/tr1/special_function_util.h \
- /usr/include/c++/14/tr1/bessel_function.tcc \
- /usr/include/c++/14/tr1/beta_function.tcc \
- /usr/include/c++/14/tr1/ell_integral.tcc \
- /usr/include/c++/14/tr1/exp_integral.tcc \
- /usr/include/c++/14/tr1/hypergeometric.tcc \
- /usr/include/c++/14/tr1/legendre_function.tcc \
- /usr/include/c++/14/tr1/modified_bessel_func.tcc \
- /usr/include/c++/14/tr1/poly_hermite.tcc \
- /usr/include/c++/14/tr1/poly_laguerre.tcc \
- /usr/include/c++/14/tr1/riemann_zeta.tcc /usr/include/SDL2/SDL_assert.h \
+ /usr/include/c++/13/bits/specfun.h \
+ /usr/include/c++/13/bits/stl_algobase.h \
+ /usr/include/c++/13/bits/functexcept.h \
+ /usr/include/c++/13/bits/exception_defines.h \
+ /usr/include/c++/13/ext/numeric_traits.h \
+ /usr/include/c++/13/bits/stl_pair.h /usr/include/c++/13/type_traits \
+ /usr/include/c++/13/bits/move.h /usr/include/c++/13/bits/utility.h \
+ /usr/include/c++/13/bits/stl_iterator_base_types.h \
+ /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/13/bits/concept_check.h \
+ /usr/include/c++/13/debug/assertions.h \
+ /usr/include/c++/13/bits/stl_iterator.h \
+ /usr/include/c++/13/bits/ptr_traits.h /usr/include/c++/13/debug/debug.h \
+ /usr/include/c++/13/bits/predefined_ops.h /usr/include/c++/13/bit \
+ /usr/include/c++/13/limits /usr/include/c++/13/tr1/gamma.tcc \
+ /usr/include/c++/13/tr1/special_function_util.h \
+ /usr/include/c++/13/tr1/bessel_function.tcc \
+ /usr/include/c++/13/tr1/beta_function.tcc \
+ /usr/include/c++/13/tr1/ell_integral.tcc \
+ /usr/include/c++/13/tr1/exp_integral.tcc \
+ /usr/include/c++/13/tr1/hypergeometric.tcc \
+ /usr/include/c++/13/tr1/legendre_function.tcc \
+ /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/13/tr1/poly_hermite.tcc \
+ /usr/include/c++/13/tr1/poly_laguerre.tcc \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/SDL2/SDL_assert.h \
  /usr/include/SDL2/SDL_atomic.h /usr/include/SDL2/SDL_platform.h \
  /usr/include/SDL2/SDL_audio.h /usr/include/SDL2/SDL_error.h \
  /usr/include/SDL2/SDL_endian.h /usr/include/SDL2/SDL_mutex.h \
  /usr/include/SDL2/SDL_thread.h /usr/include/SDL2/SDL_rwops.h \
  /usr/include/SDL2/SDL_clipboard.h /usr/include/SDL2/SDL_cpuinfo.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/immintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/x86gprintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/ia32intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/adxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/bmiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/bmi2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/cetintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/cldemoteintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/clflushoptintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/clwbintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/clzerointrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/cmpccxaddintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/enqcmdintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/fxsrintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/lzcntintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/lwpintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/movdirintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/mwaitintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/mwaitxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/pconfigintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/popcntintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/pkuintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/prfchiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/raointintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/rdseedintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/rtmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/serializeintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/sgxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/tbmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/tsxldtrkintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/uintrintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/waitpkgintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/wbnoinvdintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/xsaveintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/xsavecintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/xsaveoptintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/xsavesintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/xtestintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/hresetintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/usermsrintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/mmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/mm_malloc.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/emmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/pmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/tmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/smmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/wmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avxvnniintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avxifmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avxvnniint8intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avxvnniint16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512fintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512erintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512pfintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512cdintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512bwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512dqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vlbwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vldqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512ifmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512ifmavlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vbmiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vbmivlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx5124fmapsintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx5124vnniwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vpopcntdqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vbmi2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vbmi2vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vnniintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vnnivlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vpopcntdqvlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512bitalgintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512bitalgvlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vp2intersectintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vp2intersectvlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512fp16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512fp16vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/shaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/sm3intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/sha512intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/sm4intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/fmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/f16cintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/gfniintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/vaesintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/vpclmulqdqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512bf16vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512bf16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/avxneconvertintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/amxtileintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/amxint8intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/amxbf16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/amxcomplexintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/prfchwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/keylockerintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/amxfp16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/immintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/x86gprintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/ia32intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/adxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/bmiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/bmi2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/cetintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/cldemoteintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/clflushoptintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/clwbintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/clzerointrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/cmpccxaddintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/enqcmdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/fxsrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/lzcntintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/lwpintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/movdirintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/mwaitintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/mwaitxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/pconfigintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/popcntintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/pkuintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/prfchiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/raointintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/rdseedintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/rtmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/serializeintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/sgxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/tbmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/tsxldtrkintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/uintrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/waitpkgintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/wbnoinvdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/xsaveintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/xsavecintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/xsaveoptintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/xsavesintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/xtestintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/hresetintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/pmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/tmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/smmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/wmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avxvnniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avxifmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avxvnniint8intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512erintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512pfintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512cdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512dqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vlbwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vldqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512ifmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512ifmavlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmivlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx5124fmapsintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx5124vnniwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vpopcntdqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmi2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmi2vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vnniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vnnivlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vpopcntdqvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bitalgintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vp2intersectintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vp2intersectvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fp16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fp16vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/shaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/fmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/f16cintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/gfniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/vaesintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/vpclmulqdqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bf16vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/avxneconvertintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/amxtileintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/amxint8intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/amxbf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/amxcomplexintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/prfchwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/keylockerintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/amxfp16intrin.h \
  /usr/include/SDL2/SDL_events.h /usr/include/SDL2/SDL_video.h \
  /usr/include/SDL2/SDL_pixels.h /usr/include/SDL2/SDL_rect.h \
  /usr/include/SDL2/SDL_surface.h /usr/include/SDL2/SDL_blendmode.h \
@@ -234,34 +226,26 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_shape.h \
  /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
  /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_locale.h \
- /usr/include/SDL2/SDL_misc.h /usr/include/c++/14/iostream \
- /usr/include/c++/14/ostream /usr/include/c++/14/ios \
- /usr/include/c++/14/iosfwd /usr/include/c++/14/bits/stringfwd.h \
- /usr/include/c++/14/bits/memoryfwd.h /usr/include/c++/14/bits/postypes.h \
- /usr/include/c++/14/cwchar /usr/include/c++/14/exception \
- /usr/include/c++/14/bits/exception.h \
- /usr/include/c++/14/bits/exception_ptr.h \
- /usr/include/c++/14/bits/cxxabi_init_exception.h \
- /usr/include/c++/14/typeinfo /usr/include/c++/14/bits/hash_bytes.h \
- /usr/include/c++/14/new /usr/include/c++/14/bits/nested_exception.h \
- /usr/include/c++/14/bits/char_traits.h \
- /usr/include/c++/14/bits/localefwd.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h \
- /usr/include/c++/14/clocale /usr/include/locale.h \
- /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/14/cctype \
- /usr/include/c++/14/bits/ios_base.h /usr/include/c++/14/ext/atomicity.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h \
+ /usr/include/SDL2/SDL_misc.h /usr/include/c++/13/iostream \
+ /usr/include/c++/13/ostream /usr/include/c++/13/ios \
+ /usr/include/c++/13/iosfwd /usr/include/c++/13/bits/stringfwd.h \
+ /usr/include/c++/13/bits/memoryfwd.h /usr/include/c++/13/bits/postypes.h \
+ /usr/include/c++/13/cwchar /usr/include/c++/13/exception \
+ /usr/include/c++/13/bits/exception.h \
+ /usr/include/c++/13/bits/exception_ptr.h \
+ /usr/include/c++/13/bits/cxxabi_init_exception.h \
+ /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/hash_bytes.h \
+ /usr/include/c++/13/new /usr/include/c++/13/bits/nested_exception.h \
+ /usr/include/c++/13/bits/char_traits.h \
+ /usr/include/c++/13/bits/localefwd.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
+ /usr/include/c++/13/clocale /usr/include/locale.h \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/13/cctype \
+ /usr/include/c++/13/bits/ios_base.h /usr/include/c++/13/ext/atomicity.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
- /usr/include/linux/sched/types.h /usr/include/linux/types.h \
- /usr/lib/linux/uapi/x86/asm/types.h /usr/include/asm-generic/types.h \
- /usr/include/asm-generic/int-ll64.h \
- /usr/lib/linux/uapi/x86/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h /usr/lib/linux/uapi/x86/asm/posix_types.h \
- /usr/lib/linux/uapi/x86/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
@@ -271,69 +255,107 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/atomic_word.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
- /usr/include/c++/14/bits/locale_classes.h /usr/include/c++/14/string \
- /usr/include/c++/14/bits/allocator.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h \
- /usr/include/c++/14/bits/new_allocator.h \
- /usr/include/c++/14/bits/ostream_insert.h \
- /usr/include/c++/14/bits/cxxabi_forced.h \
- /usr/include/c++/14/bits/stl_function.h \
- /usr/include/c++/14/backward/binders.h \
- /usr/include/c++/14/bits/refwrap.h /usr/include/c++/14/bits/invoke.h \
- /usr/include/c++/14/bits/range_access.h \
- /usr/include/c++/14/initializer_list \
- /usr/include/c++/14/bits/basic_string.h \
- /usr/include/c++/14/ext/alloc_traits.h \
- /usr/include/c++/14/bits/alloc_traits.h \
- /usr/include/c++/14/bits/stl_construct.h /usr/include/c++/14/string_view \
- /usr/include/c++/14/bits/functional_hash.h \
- /usr/include/c++/14/bits/string_view.tcc \
- /usr/include/c++/14/ext/string_conversions.h /usr/include/c++/14/cstdio \
- /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/c++/13/bits/locale_classes.h /usr/include/c++/13/string \
+ /usr/include/c++/13/bits/allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
+ /usr/include/c++/13/bits/new_allocator.h \
+ /usr/include/c++/13/bits/ostream_insert.h \
+ /usr/include/c++/13/bits/cxxabi_forced.h \
+ /usr/include/c++/13/bits/stl_function.h \
+ /usr/include/c++/13/backward/binders.h \
+ /usr/include/c++/13/bits/refwrap.h /usr/include/c++/13/bits/invoke.h \
+ /usr/include/c++/13/bits/range_access.h \
+ /usr/include/c++/13/initializer_list \
+ /usr/include/c++/13/bits/basic_string.h \
+ /usr/include/c++/13/ext/alloc_traits.h \
+ /usr/include/c++/13/bits/alloc_traits.h \
+ /usr/include/c++/13/bits/stl_construct.h /usr/include/c++/13/string_view \
+ /usr/include/c++/13/bits/functional_hash.h \
+ /usr/include/c++/13/bits/string_view.tcc \
+ /usr/include/c++/13/ext/string_conversions.h /usr/include/c++/13/cstdio \
+ /usr/include/c++/13/cerrno /usr/include/errno.h \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/lib/linux/uapi/x86/asm/errno.h /usr/include/asm-generic/errno.h \
- /usr/include/asm-generic/errno-base.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
- /usr/include/c++/14/bits/charconv.h \
- /usr/include/c++/14/bits/basic_string.tcc \
- /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
- /usr/include/c++/14/bits/uses_allocator.h \
- /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
- /usr/include/c++/14/bits/locale_classes.tcc \
- /usr/include/c++/14/system_error \
- /usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h \
- /usr/include/c++/14/stdexcept /usr/include/c++/14/streambuf \
- /usr/include/c++/14/bits/streambuf.tcc \
- /usr/include/c++/14/bits/basic_ios.h \
- /usr/include/c++/14/bits/locale_facets.h /usr/include/c++/14/cwctype \
+ /usr/include/c++/13/bits/charconv.h \
+ /usr/include/c++/13/bits/basic_string.tcc \
+ /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
+ /usr/include/c++/13/bits/uses_allocator.h \
+ /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
+ /usr/include/c++/13/bits/locale_classes.tcc \
+ /usr/include/c++/13/system_error \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
+ /usr/include/c++/13/stdexcept /usr/include/c++/13/streambuf \
+ /usr/include/c++/13/bits/streambuf.tcc \
+ /usr/include/c++/13/bits/basic_ios.h \
+ /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
  /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_base.h \
- /usr/include/c++/14/bits/streambuf_iterator.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h \
- /usr/include/c++/14/bits/locale_facets.tcc \
- /usr/include/c++/14/bits/basic_ios.tcc \
- /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/mutex \
- /usr/include/c++/14/bits/chrono.h /usr/include/c++/14/ratio \
- /usr/include/c++/14/cstdint /usr/include/c++/14/ctime \
- /usr/include/c++/14/bits/parse_numbers.h \
- /usr/include/c++/14/bits/std_mutex.h \
- /usr/include/c++/14/bits/unique_lock.h /usr/include/c++/14/thread \
- /usr/include/c++/14/bits/std_thread.h \
- /usr/include/c++/14/bits/unique_ptr.h \
- /usr/include/c++/14/bits/this_thread_sleep.h /usr/include/c++/14/vector \
- /usr/include/c++/14/bits/stl_uninitialized.h \
- /usr/include/c++/14/bits/stl_vector.h \
- /usr/include/c++/14/bits/stl_bvector.h \
- /usr/include/c++/14/bits/vector.tcc /usr/include/boost/json.hpp \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
+ /usr/include/c++/13/bits/streambuf_iterator.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
+ /usr/include/c++/13/bits/locale_facets.tcc \
+ /usr/include/c++/13/bits/basic_ios.tcc \
+ /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/mutex \
+ /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
+ /usr/include/c++/13/cstdint /usr/include/c++/13/ctime \
+ /usr/include/c++/13/bits/parse_numbers.h \
+ /usr/include/c++/13/bits/std_mutex.h \
+ /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/thread \
+ /usr/include/c++/13/bits/std_thread.h \
+ /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/this_thread_sleep.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/regex \
+ /usr/include/c++/13/bitset /usr/include/c++/13/locale \
+ /usr/include/c++/13/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/c++/13/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/13/bits/locale_conv.h /usr/include/c++/13/sstream \
+ /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/stack \
+ /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
+ /usr/include/c++/13/bits/deque.tcc /usr/include/c++/13/bits/stl_stack.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
+ /usr/include/c++/13/bits/shared_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr_base.h \
+ /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/ext/concurrence.h \
+ /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/bits/stl_tempbuf.h \
+ /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/regex_constants.h \
+ /usr/include/c++/13/bits/regex_error.h \
+ /usr/include/c++/13/bits/regex_automaton.h \
+ /usr/include/c++/13/bits/regex_automaton.tcc \
+ /usr/include/c++/13/bits/regex_scanner.h \
+ /usr/include/c++/13/bits/regex_scanner.tcc \
+ /usr/include/c++/13/bits/regex_compiler.h \
+ /usr/include/c++/13/bits/regex_compiler.tcc \
+ /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
+ /usr/include/c++/13/bits/regex_executor.h \
+ /usr/include/c++/13/bits/regex_executor.tcc \
+ /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h /usr/include/boost/json.hpp \
  /usr/include/boost/json/detail/config.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp \
  /usr/include/boost/config/detail/select_stdlib_config.hpp \
- /usr/include/c++/14/version \
+ /usr/include/c++/13/version \
  /usr/include/boost/config/stdlib/libstdcpp3.hpp /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -353,21 +375,14 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/assert/source_location.hpp \
  /usr/include/boost/current_function.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/cstdint.hpp \
- /usr/include/c++/14/cstring /usr/include/c++/14/utility \
- /usr/include/c++/14/bits/stl_relops.h /usr/include/boost/json/array.hpp \
+ /usr/include/c++/13/cstring /usr/include/c++/13/utility \
+ /usr/include/c++/13/bits/stl_relops.h /usr/include/boost/json/array.hpp \
  /usr/include/boost/json/kind.hpp /usr/include/boost/json/string_view.hpp \
  /usr/include/boost/core/detail/string_view.hpp \
  /usr/include/boost/core/enable_if.hpp \
- /usr/include/boost/core/detail/is_same.hpp /usr/include/c++/14/algorithm \
- /usr/include/c++/14/bits/stl_algo.h \
- /usr/include/c++/14/bits/algorithmfwd.h \
- /usr/include/c++/14/bits/stl_heap.h \
- /usr/include/c++/14/bits/uniform_int_dist.h \
- /usr/include/c++/14/bits/stl_tempbuf.h \
- /usr/include/c++/14/pstl/glue_algorithm_defs.h \
- /usr/include/c++/14/pstl/execution_defs.h /usr/include/c++/14/climits \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h \
+ /usr/include/boost/core/detail/is_same.hpp /usr/include/c++/13/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
@@ -391,7 +406,7 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/move/detail/meta_utils_core.hpp \
  /usr/include/boost/move/detail/addressof.hpp \
  /usr/include/boost/move/detail/config_end.hpp \
- /usr/include/c++/14/cassert \
+ /usr/include/c++/13/cassert \
  /usr/include/boost/container/detail/placement_new.hpp \
  /usr/include/boost/container/detail/config_end.hpp \
  /usr/include/boost/container/pmr/polymorphic_allocator.hpp \
@@ -422,11 +437,11 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/container/pmr/global_resource.hpp \
  /usr/include/boost/container/detail/auto_link.hpp \
  /usr/include/boost/json/detail/shared_resource.hpp \
- /usr/include/c++/14/atomic /usr/include/c++/14/bits/atomic_base.h \
- /usr/include/c++/14/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/boost/json/detail/default_resource.hpp \
- /usr/include/boost/json/detail/array.hpp /usr/include/c++/14/iterator \
- /usr/include/c++/14/bits/stream_iterator.h \
+ /usr/include/boost/json/detail/array.hpp /usr/include/c++/13/iterator \
+ /usr/include/c++/13/bits/stream_iterator.h \
  /usr/include/boost/json/value.hpp /usr/include/boost/json/object.hpp \
  /usr/include/boost/json/detail/object.hpp \
  /usr/include/boost/json/detail/value.hpp \
@@ -443,16 +458,13 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/system/detail/config.hpp \
  /usr/include/boost/system/detail/requires_cxx11.hpp \
  /usr/include/boost/config/pragma_message.hpp \
- /usr/include/c++/14/functional /usr/include/c++/14/bits/std_function.h \
- /usr/include/c++/14/unordered_map \
- /usr/include/c++/14/bits/unordered_map.h \
- /usr/include/c++/14/bits/hashtable.h \
- /usr/include/c++/14/bits/hashtable_policy.h \
- /usr/include/c++/14/ext/aligned_buffer.h \
- /usr/include/c++/14/bits/enable_special_members.h \
- /usr/include/c++/14/bits/node_handle.h \
- /usr/include/c++/14/bits/erase_if.h /usr/include/c++/14/array \
- /usr/include/c++/14/compare \
+ /usr/include/c++/13/functional /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/array \
+ /usr/include/c++/13/compare \
  /usr/include/boost/system/detail/error_condition.hpp \
  /usr/include/boost/system/detail/generic_category.hpp \
  /usr/include/boost/system/detail/generic_category_message.hpp \
@@ -463,7 +475,7 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/system/detail/cerrno.hpp \
  /usr/include/boost/system/detail/append_int.hpp \
  /usr/include/boost/system/detail/snprintf.hpp \
- /usr/include/c++/14/cstdarg \
+ /usr/include/c++/13/cstdarg \
  /usr/include/boost/system/detail/system_category.hpp \
  /usr/include/boost/system/detail/system_category_impl.hpp \
  /usr/include/boost/system/detail/system_category_message.hpp \
@@ -532,7 +544,7 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/describe/modifiers.hpp \
  /usr/include/boost/describe/bases.hpp \
  /usr/include/boost/describe/detail/cx_streq.hpp \
- /usr/include/c++/14/variant \
+ /usr/include/c++/13/variant \
  /usr/include/boost/json/monotonic_resource.hpp \
  /usr/include/boost/json/null_resource.hpp \
  /usr/include/boost/json/parse.hpp /usr/include/boost/json/parser.hpp \
@@ -547,7 +559,7 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/json/value_from.hpp \
  /usr/include/boost/json/detail/value_from.hpp \
  /usr/include/boost/describe/enum_to_string.hpp \
- /usr/include/c++/14/optional /usr/include/boost/json/value_to.hpp \
+ /usr/include/c++/13/optional /usr/include/boost/json/value_to.hpp \
  /usr/include/boost/json/detail/value_to.hpp \
  /usr/include/boost/describe/enum_from_string.hpp \
  /usr/include/boost/json/visit.hpp /usr/include/boost/json/impl/visit.hpp \
@@ -590,17 +602,13 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/type_traits/add_const.hpp \
  /usr/include/boost/type_traits/add_volatile.hpp \
  /usr/include/boost/type_traits/conjunction.hpp \
- /usr/include/c++/14/complex /usr/include/c++/14/sstream \
- /usr/include/c++/14/bits/sstream.tcc /usr/include/c++/14/memory \
- /usr/include/c++/14/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/shared_ptr.h \
- /usr/include/c++/14/bits/shared_ptr_base.h \
- /usr/include/c++/14/bits/allocated_ptr.h \
- /usr/include/c++/14/ext/concurrence.h \
- /usr/include/c++/14/bits/shared_ptr_atomic.h \
- /usr/include/c++/14/backward/auto_ptr.h \
- /usr/include/c++/14/pstl/glue_memory_defs.h \
- /usr/include/c++/14/typeindex /usr/include/boost/json/impl/error.ipp \
+ /usr/include/c++/13/complex /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/13/bits/align.h \
+ /usr/include/c++/13/bits/shared_ptr_atomic.h \
+ /usr/include/c++/13/backward/auto_ptr.h \
+ /usr/include/c++/13/pstl/glue_memory_defs.h \
+ /usr/include/c++/13/typeindex /usr/include/boost/json/impl/error.ipp \
  /usr/include/boost/json/impl/kind.ipp \
  /usr/include/boost/json/impl/monotonic_resource.ipp \
  /usr/include/boost/align/align.hpp \
@@ -616,7 +624,7 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/json/detail/buffer.hpp \
  /usr/include/boost/json/detail/charconv/from_chars.hpp \
  /usr/include/boost/json/detail/charconv/detail/config.hpp \
- /usr/include/c++/14/cfloat \
+ /usr/include/c++/13/cfloat \
  /usr/include/boost/json/detail/charconv/detail/from_chars_result.hpp \
  /usr/include/boost/json/detail/charconv/chars_format.hpp \
  /usr/include/boost/json/detail/sse2.hpp \
@@ -651,7 +659,7 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/json/detail/charconv/detail/fast_float/ascii_number.hpp \
  /usr/include/boost/json/detail/charconv/detail/fast_float/decimal_to_binary.hpp \
  /usr/include/boost/json/detail/charconv/detail/fast_float/fast_table.hpp \
- /usr/include/c++/14/cinttypes \
+ /usr/include/c++/13/cinttypes \
  /usr/include/boost/json/detail/charconv/detail/fast_float/digit_comparison.hpp \
  /usr/include/boost/json/detail/charconv/detail/fast_float/bigint.hpp \
  /usr/include/boost/json/detail/charconv/detail/from_chars_float_impl.hpp \
@@ -765,8 +773,16 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
- /usr/lib/linux/uapi/x86/asm/socket.h /usr/include/asm-generic/socket.h \
- /usr/lib/linux/uapi/x86/asm/sockios.h /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/rpc/netdb.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
@@ -782,7 +798,7 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/asio/execution/detail/bulk_sender.hpp \
  /usr/include/boost/asio/traits/bulk_execute_member.hpp \
  /usr/include/boost/asio/traits/bulk_execute_free.hpp \
- /usr/include/boost/asio/execution/context.hpp /usr/include/c++/14/any \
+ /usr/include/boost/asio/execution/context.hpp /usr/include/c++/13/any \
  /usr/include/boost/asio/execution/context_as.hpp \
  /usr/include/boost/asio/execution/mapping.hpp \
  /usr/include/boost/asio/execution/occupancy.hpp \
@@ -808,7 +824,7 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/asio/detail/bind_handler.hpp \
  /usr/include/boost/asio/detail/handler_cont_helpers.hpp \
  /usr/include/boost/asio/handler_continuation_hook.hpp \
- /usr/include/boost/asio/detail/chrono.hpp /usr/include/c++/14/chrono \
+ /usr/include/boost/asio/detail/chrono.hpp /usr/include/c++/13/chrono \
  /usr/include/boost/asio/detail/scheduler.hpp \
  /usr/include/boost/asio/detail/conditionally_enabled_event.hpp \
  /usr/include/boost/asio/detail/conditionally_enabled_mutex.hpp \
@@ -827,7 +843,7 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/asio/detail/scheduler_thread_info.hpp \
  /usr/include/boost/asio/detail/signal_blocker.hpp \
  /usr/include/boost/asio/detail/posix_signal_blocker.hpp \
- /usr/include/c++/14/csignal /usr/include/signal.h \
+ /usr/include/c++/13/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
@@ -859,6 +875,8 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
  /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
@@ -869,8 +887,9 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/boost/asio/detail/socket_types.hpp \
  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
- /usr/lib/linux/uapi/x86/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
- /usr/include/linux/ioctl.h /usr/lib/linux/uapi/x86/asm/ioctl.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+ /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h \
  /usr/include/asm-generic/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h /usr/include/poll.h \
@@ -1259,13 +1278,12 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/openssl/core.h /usr/include/openssl/bioerr.h \
  /usr/include/openssl/lhash.h /usr/include/openssl/conferr.h \
  /usr/include/openssl/conftypes.h /usr/include/openssl/ssl.h \
- /usr/include/openssl/e_ostime.h /usr/include/openssl/comp.h \
- /usr/include/openssl/comperr.h /usr/include/openssl/x509.h \
- /usr/include/openssl/buffer.h /usr/include/openssl/buffererr.h \
- /usr/include/openssl/evp.h /usr/include/openssl/core_dispatch.h \
- /usr/include/openssl/indicator.h /usr/include/openssl/params.h \
- /usr/include/openssl/bn.h /usr/include/openssl/bnerr.h \
- /usr/include/openssl/evperr.h /usr/include/openssl/objects.h \
+ /usr/include/openssl/comp.h /usr/include/openssl/comperr.h \
+ /usr/include/openssl/x509.h /usr/include/openssl/buffer.h \
+ /usr/include/openssl/buffererr.h /usr/include/openssl/evp.h \
+ /usr/include/openssl/core_dispatch.h /usr/include/openssl/evperr.h \
+ /usr/include/openssl/params.h /usr/include/openssl/bn.h \
+ /usr/include/openssl/bnerr.h /usr/include/openssl/objects.h \
  /usr/include/openssl/obj_mac.h /usr/include/openssl/asn1.h \
  /usr/include/openssl/asn1err.h /usr/include/openssl/objectserr.h \
  /usr/include/openssl/ec.h /usr/include/openssl/ecerr.h \
@@ -1282,12 +1300,11 @@ CMakeFiles/SchoolBot.dir/main.cpp.o: /home/bou/code/probe/cppbot/main.cpp \
  /usr/include/openssl/sslerr_legacy.h /usr/include/openssl/prov_ssl.h \
  /usr/include/openssl/ssl2.h /usr/include/openssl/ssl3.h \
  /usr/include/openssl/tls1.h /usr/include/openssl/dtls1.h \
- /usr/include/openssl/srtp.h /usr/include/openssl/quic.h \
- /usr/include/openssl/engine.h /usr/include/openssl/rand.h \
- /usr/include/openssl/randerr.h /usr/include/openssl/ui.h \
- /usr/include/openssl/uierr.h /usr/include/openssl/err.h \
- /usr/include/openssl/engineerr.h /usr/include/openssl/x509v3.h \
- /usr/include/openssl/x509v3err.h \
+ /usr/include/openssl/srtp.h /usr/include/openssl/engine.h \
+ /usr/include/openssl/rand.h /usr/include/openssl/randerr.h \
+ /usr/include/openssl/ui.h /usr/include/openssl/uierr.h \
+ /usr/include/openssl/err.h /usr/include/openssl/engineerr.h \
+ /usr/include/openssl/x509v3.h /usr/include/openssl/x509v3err.h \
  /usr/include/boost/asio/ssl/detail/openssl_init.hpp \
  /usr/include/boost/asio/ssl/detail/impl/openssl_init.ipp \
  /usr/include/boost/asio/ssl/detail/password_callback.hpp \

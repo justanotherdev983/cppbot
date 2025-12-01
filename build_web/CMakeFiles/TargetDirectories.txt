@@ -1,3 +1,0 @@
-/home/bou/code/probe/cppbot/build_web/CMakeFiles/SchoolBot.dir
-/home/bou/code/probe/cppbot/build_web/CMakeFiles/edit_cache.dir
-/home/bou/code/probe/cppbot/build_web/CMakeFiles/rebuild_cache.dir
